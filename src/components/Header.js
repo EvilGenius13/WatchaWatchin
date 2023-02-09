@@ -7,7 +7,7 @@ function Header() {
     <div>
       <header>
         <h1>Watcha Watchin?</h1>
-        <div>Find out what's popular or in theatres!</div>
+        <p>Find out what's popular or in theatres!</p>
         <nav>
           <NavLink to="/">Home</NavLink>
         </nav>

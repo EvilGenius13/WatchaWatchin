@@ -1,6 +1,29 @@
+
+
 Header {
-  background-color: #222;
-  height: 150px;
+  background-color: #124449;
+  height: 50px;
   padding: 20px;
-  color: white;
+  color: #20dbd8;
+  font-family: 'Limelight', cursive;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  align-content: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0;
+}
+
+div {
+  font-size: 20px;
+  font-weight: bold;
+}
+a {
+  color: #179fa3;
+  text-decoration: none;
 }
