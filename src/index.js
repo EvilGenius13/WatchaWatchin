@@ -13,10 +13,10 @@ const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
 
 root.render(
-  <Router>
+  <Router basename='/'>
     <Routes>
-      <Route path="/home" element={<App />}>
-        <Route path="/home/" element={<MovieList />} />
+      <Route path="/" element={<App />}>
+        <Route path="/" element={<MovieList />} />
         <Route path="/:movieId" element={<MovieCardDetails />} />
       </Route>
     </Routes>

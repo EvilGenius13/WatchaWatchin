@@ -1,6 +1,10 @@
+.body {
+	background-color: #12282c;
+}
+
 .movie-list {
   display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-gap: 2em;
 	max-width: 1000px;
 	margin: auto;
@@ -8,7 +12,4 @@
   background-color: #12282c;
 }
 
-.body {
-  background-color: #12282c;
-}
 

@@ -13,7 +13,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   color: #20dbd8;
-  max-height: 85vh;
+  background-color: #12282c;
+  height: 95vh;
 }
 
 .details-poster img {
@@ -35,4 +36,9 @@
 
 .details-trailer { grid-area: details-trailer; }
 
+.over { 
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
 

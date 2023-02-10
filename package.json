@@ -2,7 +2,7 @@
   "name": "movie-db-final",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://EvilGenius13.github.io/WhatchaWatchin",
+  "homepage": "http://EvilGenius13.github.io/WhatchaWatchin/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
