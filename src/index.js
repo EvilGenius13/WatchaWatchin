@@ -1,11 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+//import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './components/App'
 import reportWebVitals from './reportWebVitals';
 
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import MovieList from './components/MovieList';
 import MovieCardDetails from './components/MovieCardDetails';
 
@@ -15,8 +15,8 @@ const root = createRoot(rootElement);
 root.render(
   <Router>
     <Routes>
-      <Route path="/" element={<App />}>
-        <Route path="/" element={<MovieList />} />
+      <Route path="/home" element={<App />}>
+        <Route path="/home/" element={<MovieList />} />
         <Route path="/:movieId" element={<MovieCardDetails />} />
       </Route>
     </Routes>

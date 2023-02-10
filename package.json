@@ -2,6 +2,7 @@
   "name": "movie-db-final",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://EvilGenius13.github.io/WhatchaWatchin",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -10,8 +11,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.8.1",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4",
-    "homepage": "http://EvilGenius13.github.io/WhatchaWatchin"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
