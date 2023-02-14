@@ -16,6 +16,11 @@
   box-shadow: #20dbd8 0px 5px 15px;
 }
 
+.movie-card:hover::after {
+  position: absolute;
+  content: attr(title);
+}
+
 
 .movie-card img {
   width: 100%;

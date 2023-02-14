@@ -1,44 +1,77 @@
-.container {  display: grid;
+body {
+  background-color: #12282c;
+  color: #20dbd8;
+}
+
+.container {  
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  gap: 0px 0px;
-  padding: 20px;
+  grid-gap: 2em;
   grid-auto-flow: row;
   grid-template-areas:
     "details-poster details-movie details-movie"
-    "details-poster details-movie details-movie"
-    "details-poster details-movie details-movie"
-    "details-trailer details-trailer details-trailer"
-    "details-trailer details-trailer details-trailer";
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #20dbd8;
+    "details-actor details-actor details-actor";
   background-color: #12282c;
-  height: 95vh;
+  max-width: 1200px;
+  margin: auto;
+  padding: 2em;
 }
 
-.details-poster img {
-  grid-area: details-poster; 
+.details-poster img{
+  grid-area: details-poster;
   border-radius: 5px;
-  box-shadow: #20dbd8 0px 5px 15px;
+  box-shadow: #20dbd8 0px 5px 15px; 
 }
 
-.details-movie { 
+.details-movie {
   grid-area: details-movie;
-  padding: 20px;
-  max-width: 80vh;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
-  justify-content: center;
-  text-shadow: #20dbd8 0px 5px 15px;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'helvetica', 'Courier New', Courier, monospace;
 }
 
-.details-trailer { grid-area: details-trailer; }
-
-.over { 
-  font-size: 1.2rem;
-  font-weight: 500;
-  margin-bottom: 10px;
+.details-movie h1 {
+  font-size: 2em;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
 }
 
+.details-movie h2 {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+.details-movie p {
+  font-size: 1em;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+
+.details-actor { 
+  grid-area: details-actor;
+  display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+	grid-gap: 2em;
+  max-width: 1200px;
+	margin: auto;
+	padding: 2em;
+  background-color: #12282c; 
+}
+
+/* .details-movie {
+  grid-area: details-movie;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Courier New', Courier, monospace;
+} */

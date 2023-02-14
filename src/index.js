@@ -8,6 +8,7 @@ import { createRoot } from 'react-dom/client';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import MovieList from './components/MovieList';
 import MovieCardDetails from './components/MovieCardDetails';
+import MovieActorDetails from './components/MovieActorDetails';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
@@ -18,6 +19,7 @@ root.render(
       <Route path="/" element={<App />}>
         <Route path="/" element={<MovieList />} />
         <Route path="/:movieId" element={<MovieCardDetails />} />
+        <Route path="/:actorId" element={<MovieActorDetails />} />
       </Route>
     </Routes>
   </Router>

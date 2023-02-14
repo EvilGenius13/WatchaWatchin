@@ -6,7 +6,7 @@
   display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-gap: 2em;
-	max-width: 1000px;
+	max-width: 1200px;
 	margin: auto;
 	padding: 2em;
   background-color: #12282c;
