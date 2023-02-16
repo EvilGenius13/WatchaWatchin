@@ -15,11 +15,23 @@ useEffect(() => {
       setMovies(data.results);
     });
 }, []);
+
   const list = movies.map(movie => (
     <MovieCard key={movie.id} movie={movie} />
   ));
+  function searchClick() {
+    fetch("https://api.themoviedb.org/3/search/movie?api_key=" + API_KEY + "&query=" + query)
+      .then(res => res.json())
+      .then(data => {
+        setMovies(data.results);
+      });
+  }
   return (
     <div className="body">
+      <input type="text" placeholder="Search for a movie" 
+        onChange={e => setQuery(e.target.value)} value={query}
+        />
+        <button onClick={searchClick}>Search</button>
     <div className="movie-list">
       { list }
     </div>

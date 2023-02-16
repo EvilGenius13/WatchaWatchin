@@ -16,12 +16,14 @@ function MovieCardDetails(props) {
   const [movieTrailer, setMovieTrailer] = useState([]);
   const [movieCast, setMovieCast] = useState([]);
   const API_CAST = "https://api.themoviedb.org/3/movie/" + movie_id + "/credits?api_key=" + API_KEY;
-  
+
   useEffect(() => {
     fetch(API_URL)
       .then((res) => res.json())
       .then((data) => {
-        const trailer_key = data.results[0].key;
+        const official_trailers = data.results.filter(trailer => trailer.type === "Trailer");
+        const first_trailer = official_trailers[0];
+        const trailer_key = first_trailer.key;
         setMovieTrailer(trailer_key);
       });
   }, [API_URL]);
