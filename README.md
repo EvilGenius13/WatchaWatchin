@@ -8,10 +8,14 @@ Find popular movies or search for them to see movie details including cast membe
 
 Type npm start in the terminal to run the program.
 
+### Current Bugs
+- Some movies are missing posters
+- Movie links with blank posters can cause links to not work
+- Typing in a search term and then deleting it will cause the search to not work
+
 ### Future Enhancements
 - [ ] Add a login page
 - [ ] Add a favorites page
 - [ ] Add a watchlist page
 - [ ] Add a page to see what movies are coming soon
-- [ ] Fix issue with search button not having pointer
-- [ ] Fix issue with broken home button while searching
+

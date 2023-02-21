@@ -4,8 +4,9 @@ import App from './components/App'
 import reportWebVitals from './reportWebVitals';
 
 import { createRoot } from 'react-dom/client';
-import { HashRouter as Router, Routes, Route, HashRouter } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route} from 'react-router-dom';
 import MovieList from './components/MovieList';
+import ActorList from './components/ActorList';
 import MovieCardDetails from './components/MovieCardDetails';
 import MovieActorDetails from './components/MovieActorDetails';
 
@@ -17,6 +18,7 @@ root.render(
     <Routes>
       <Route path="/" element={<App />}>
         <Route path="/" element={<MovieList />} />
+        <Route path="/actor/" element={<ActorList />} />
         <Route path="/movie/:movieId" element={<MovieCardDetails />} />
         <Route path="/actor/:actorId" element={<MovieActorDetails />} />
       </Route>

@@ -1,44 +1,43 @@
 import React, {useState, useEffect} from "react";
-import "./MovieList.css";
-import MovieCard from "./MovieCard";
+import "./ActorList.css";
+import MovieActorCard from "./MovieActorCard";
 const API_KEY = "a4b966099e2034324cedd25a4719cd2e";
-const API_URL = "https://api.themoviedb.org/3/discover/movie?api_key=" + API_KEY + "&region=US&with_release_type=3|2";
+const API_URL = "https://api.themoviedb.org/3/person/popular?api_key=" + API_KEY + "&language=en-US&page=1";
 
 function MovieList() {
-const [movies, setMovies] = useState([]);
+const [actors, setActors] = useState([]);
 const [query, setQuery] = useState("");
 
 useEffect(() => {
   fetch(API_URL)
     .then(res => res.json())
     .then(data => {
-      setMovies(data.results);
+      setActors(data.results);
     });
 }, []);
-
-  const list = movies.map(movie => (
-    <MovieCard key={movie.id} movie={movie} />
+  const list = actors.map(actor => (
+    <MovieActorCard key={actor.id} actor={actor} />
   ));
   function searchClick() {
-    fetch("https://api.themoviedb.org/3/search/movie?api_key=" + API_KEY + "&query=" + query)
+    fetch("https://api.themoviedb.org/3/search/person?api_key=" + API_KEY + "&query=" + query)
       .then(res => res.json())
       .then(data => {
-        setMovies(data.results);
+        setActors(data.results);
       });
   }
-  if (movies === null) {
+  if (actors === null) {
     return <div>Loading</div>
   } else {
     return (
     <div className="body">
-      <input type="text" placeholder="Search for a movie" 
+      <input type="text" placeholder="Search for an actor" 
         onChange={e => setQuery(e.target.value)} value={query}
         />
       <div className="search-button">
         <button style={{cursor:"pointer"}} onClick={searchClick}>Search</button>
       </div>
-    <div className="movie-list">
-      { list }
+    <div className="actor-list">
+      {list}
     </div>
     </div>
   );

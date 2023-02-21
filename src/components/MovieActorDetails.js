@@ -9,14 +9,12 @@ function MovieActorDetails(props) {
   const [actorMovies, setActorMovies] = useState([]);
   const location = useLocation();
   const actor = location.state;
-  console.log(actor)
   
   useEffect(() => {
     fetch("https://api.themoviedb.org/3/person/" + actor.id + "/movie_credits?api_key=" + API_KEY + "&language=en-US")
       .then((response) => response.json())
       .then((data) => {
         setActorMovies(data.cast);
-        console.log(data.cast)
       });
   }, []);
 
