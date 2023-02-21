@@ -31,7 +31,9 @@ useEffect(() => {
       <input type="text" placeholder="Search for a movie" 
         onChange={e => setQuery(e.target.value)} value={query}
         />
-        <button onClick={searchClick}>Search</button>
+      <div className="search-button">
+        <button style={{cursor:"pointer"}} onClick={searchClick}>Search</button>
+      </div>
     <div className="movie-list">
       { list }
     </div>

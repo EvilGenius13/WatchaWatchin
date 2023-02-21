@@ -1,7 +1,12 @@
 .footer {
   background-color: #124449;
-  height: 50px;
-  padding: 20px;
+  height: auto;
+  padding: 10px;
   color: #20dbd8;
   text-align: center;
+}
+
+#coffee {
+  height: 50px;
+  width: 200px;
 }

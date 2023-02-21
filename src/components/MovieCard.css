@@ -18,7 +18,9 @@
 
 .movie-card:hover::after {
   position: absolute;
-  content: attr(title);
+  content: attr(data-alt);
+  top: 0;
+  left: 0;
 }
 
 

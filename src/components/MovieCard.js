@@ -5,7 +5,8 @@ import { Link } from "react-router-dom";
 function MovieDetails(props) {
 
   const movie = props
-  const movielink = "/" + movie.movie.id
+  const movielink = "/movie/" + movie.movie.id
+    
   return (
     <div className="movie-card">
       <Link to={movielink} state={movie}>

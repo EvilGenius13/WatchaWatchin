@@ -5,8 +5,6 @@ import { useState, useEffect } from "react";
 import YoutubeEmbed from "./YouTube";
 import MovieActorCard from "./MovieActorCard";
 
-// TODO: Fix API call to only get official movie trailers
-
 function MovieCardDetails(props) {  
   const location = useLocation();
   const movie = location.state.movie;

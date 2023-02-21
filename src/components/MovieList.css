@@ -37,4 +37,9 @@ button {
 	background-color: #12282c;
 	font-size: 14px;
 	font-weight: bold;
+	cursor: pointer;
+}
+
+.search-button {
+	cursor: pointer;
 }
