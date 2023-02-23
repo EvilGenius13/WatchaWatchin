@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 function MovieActorCard(props) {
   const actor = props.actor;
   const actorlink = "/actor/" + actor.id
-  console.log(actor.character)
   if (actor.character === undefined) {
     return (
       <div className="actor-card">

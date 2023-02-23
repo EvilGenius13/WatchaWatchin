@@ -37,7 +37,30 @@ function MovieCardDetails(props) {
   const list = movieCast.map(actor => (
     <MovieActorCard key={actor.id} actor={actor} />
   ));
-
+  if (!movie.poster_path) {
+    return (
+      <div className="container">
+        <div className="details-poster">
+          <img src={"https://d1csarkz8obe9u.cloudfront.net/posterpreviews/blank-poster-template-a40a8cc08c073620d3c85098f8f78796_screen.jpg?ts=1636968323"} alt={movie.title + " poster"} />
+        </div>
+        <div className="details-movie">
+            <h1>{movie.title}</h1>
+            <p className="over">{movie.overview}</p>
+            <h2>Release Date:</h2>
+            <p>{movie.release_date}</p>
+            <h2>Rating: </h2>
+            <p>{movie.vote_average}</p>
+              <div className="details-trailer">
+                <YoutubeEmbed embedId={movieTrailer} />
+              </div>
+        </div>
+        <div className="details-actor">
+           {list}
+        </div>
+      </div>
+      
+    );
+  }
   return (
     <div className="container">
       <div className="details-poster">
