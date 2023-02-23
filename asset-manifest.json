@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/WhatchaWatchin/static/css/main.ff61c4e3.css",
-    "main.js": "/WhatchaWatchin/static/js/main.14ae42b0.js",
+    "main.js": "/WhatchaWatchin/static/js/main.a12536ca.js",
     "static/js/787.92b91424.chunk.js": "/WhatchaWatchin/static/js/787.92b91424.chunk.js",
     "static/media/bmc-button.png": "/WhatchaWatchin/static/media/bmc-button.01c535cbb3d77310a940.png",
     "index.html": "/WhatchaWatchin/index.html",
     "main.ff61c4e3.css.map": "/WhatchaWatchin/static/css/main.ff61c4e3.css.map",
-    "main.14ae42b0.js.map": "/WhatchaWatchin/static/js/main.14ae42b0.js.map",
+    "main.a12536ca.js.map": "/WhatchaWatchin/static/js/main.a12536ca.js.map",
     "787.92b91424.chunk.js.map": "/WhatchaWatchin/static/js/787.92b91424.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ff61c4e3.css",
-    "static/js/main.14ae42b0.js"
+    "static/js/main.a12536ca.js"
   ]
 }
