@@ -22,7 +22,7 @@ useEffect(() => {
     fetch("https://api.themoviedb.org/3/search/person?api_key=" + API_KEY + "&query=" + query)
       .then(res => res.json())
       .then(data => {
-        setActors(data.results[0]);
+        setActors(data.results);
       });
   }
   if (actors === null) {
