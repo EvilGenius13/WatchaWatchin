@@ -49,7 +49,7 @@ function MovieCardDetails(props) {
             <h2>Release Date:</h2>
             <p>{movie.release_date}</p>
             <h2>Rating: </h2>
-            <p>{movie.vote_average}</p>
+            <p>{movie.vote_average}/10</p>
               <div className="details-trailer">
                 <YoutubeEmbed embedId={movieTrailer} />
               </div>
