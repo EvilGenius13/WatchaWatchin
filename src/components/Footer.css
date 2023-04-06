@@ -10,3 +10,25 @@
   height: 50px;
   width: 200px;
 }
+
+/* Smaller screens and tablets */
+@media only screen and (max-width: 960px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2px;
+  }
+  #coffee {
+    height: 30px;
+    width: 100px;
+  }
+  .footer-text {
+    font-size: 0.6em;
+  }
+}
+
+/* Small screens mobile */
+@media only screen and (max-width: 700px) {
+ 
+}
